@@ -3,135 +3,148 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sammy's MindChirps Clone</title>
-  <meta name="description" content="MindChirps Blog Clone">
-  <meta name="theme-color" content="#1e525b">
+  <title>MindChirps - Page 2</title>
   <link rel="icon" href="https://www.mindchirps.com/image/1598192630.jpeg" type="image/jpeg">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body {
-      background: url('https://www.mindchirps.com/background/background15.jpg') no-repeat center center fixed;
-      background-size: cover;
       font-family: 'Roboto', sans-serif;
+      background: url("https://www.mindchirps.com/background/background15.jpg") center/cover no-repeat fixed;
       color: #333;
     }
-    .navbar {
-      background-color: #1e525b;
-    }
-    .navbar-brand, .nav-link, .footer a {
-      color: white !important;
-    }
-    .header-title {
+    .main-title {
       font-family: 'Satisfy', cursive;
-      font-size: 3rem;
-      color: #fff;
-      padding: 20px;
       text-align: center;
+      padding: 40px 10px 10px;
+      color: #1e525b;
+      font-size: 3rem;
     }
-    .content {
-      background: rgba(255,255,255,0.95);
-      padding: 30px;
+    .container {
+      margin-top: 20px;
+    }
+    .card {
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .card img {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .sidebar {
+      background-color: #1e525b;
+      padding: 15px;
       border-radius: 10px;
-    }
-    .blog-post {
+      color: white;
       margin-bottom: 30px;
     }
-    .blog-post img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    .blog-post h3 {
+    .sidebar h5 {
+      border-left: 4px solid #eee;
+      padding-left: 10px;
       margin-top: 10px;
     }
-    .sidebar h5 {
-      margin-top: 20px;
-      border-bottom: 2px solid #1e525b;
-      padding-bottom: 5px;
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .sidebar ul li {
+      margin-bottom: 8px;
+    }
+    .sidebar a {
+      color: #c2f2fc;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
     }
     .footer {
       background: #1e525b;
       color: white;
-      padding: 20px 0;
-      margin-top: 40px;
+      padding: 30px 0;
+      text-align: center;
     }
-    .tag {
-      display: inline-block;
+    .btn-page {
       background: #1e525b;
       color: white;
-      padding: 5px 10px;
-      border-radius: 5px;
-      margin: 3px;
+      margin: 5px;
     }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">MindChirps</a>
-  </nav>
-  <div class="container mt-4 mb-5">
-    <div class="header-title">Welcome to Sammy's MindChirps</div>
+  <div class="main-title">MindChirps</div>
+  <div class="container">
     <div class="row">
+      <!-- Main content -->
       <div class="col-md-8">
-        <div class="content">
-          <div class="blog-post">
-            <img src="https://www.mindchirps.com/image/1710846152.jpeg" alt="Blog Image">
-            <h3>5 Books That Made Me Reflect</h3>
-            <p>These books touched my mind and soul in different ways. Let me walk you through them and how they influenced my thoughts.</p>
-          </div>
-          <div class="blog-post">
-            <img src="https://www.mindchirps.com/image/1710046152.jpg" alt="Blog Image">
-            <h3>Unexpected Lessons from Daily Life</h3>
-            <p>Everyday moments are full of wonder. A child’s laughter or a bird’s call can teach deep lessons if we observe closely.</p>
-          </div>
-          <div class="blog-post">
-            <img src="https://www.mindchirps.com/image/1698842123.jpg" alt="Blog Image">
-            <h3>5 Tamil Movies You Must Watch</h3>
-            <p>These films are more than entertainment. They speak of society, love, and human struggles in raw and beautiful ways.</p>
-          </div>
-          <div class="text-center">
-            <a href="?page=1" class="btn btn-outline-dark">← Previous</a>
-            <a href="?page=3" class="btn btn-outline-dark">Next →</a>
+        <!-- Blog post 1 -->
+        <div class="card">
+          <img class="card-img-top" src="https://www.mindchirps.com/image/1697619189.jpg" alt="Blog 1">
+          <div class="card-body">
+            <h5 class="card-title">The 5 AM Club – Book Summary</h5>
+            <p class="card-text">Discover the power of waking up early and how it transforms your life by owning your morning...</p>
+            <a href="#" class="btn btn-primary">Read More</a>
           </div>
         </div>
+        <!-- Blog post 2 -->
+        <div class="card">
+          <img class="card-img-top" src="https://www.mindchirps.com/image/1696615671.jpg" alt="Blog 2">
+          <div class="card-body">
+            <h5 class="card-title">Maaveeran – Movie Review</h5>
+            <p class="card-text">A Tamil superhero movie that combines action with satire and delivers an emotional punch...</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <!-- Blog post 3 -->
+        <div class="card">
+          <img class="card-img-top" src="https://www.mindchirps.com/image/1693417887.jpg" alt="Blog 3">
+          <div class="card-body">
+            <h5 class="card-title">Ghoomer – Movie Review</h5>
+            <p class="card-text">A tale of hope and resilience as a girl defies the odds to become a cricketer again...</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="text-center">
+          <a href="index.html" class="btn btn-page">&laquo; Previous</a>
+          <a href="#" class="btn btn-page">Page 2</a>
+          <a href="#" class="btn btn-page disabled">Next &raquo;</a>
+        </div>
       </div>
+
+      <!-- Sidebar -->
       <div class="col-md-4">
-        <div class="content sidebar">
+        <div class="sidebar">
           <h5>About</h5>
-          <p>Hi, I’m Sammy! This is my space to share thoughts, reviews, and moments from life’s lab. LIFE = Laboratory with Infinite Freedom to Experiment.</p>
+          <p>Hello! I'm Sammy, the creator of MindChirps. I believe LIFE = Laboratory with Infinite Freedom to Experiment.</p>
 
           <h5>Newsletter</h5>
-          <p>Subscribe to get updates on new blog posts directly to your inbox.</p>
-          <input type="email" class="form-control mb-2" placeholder="Your email">
-          <button class="btn btn-primary btn-block">Subscribe</button>
+          <p>Subscribe for updates!</p>
 
           <h5>Categories</h5>
-          <ul class="list-unstyled">
+          <ul>
             <li><a href="#">Books</a></li>
             <li><a href="#">Movies</a></li>
-            <li><a href="#">Life</a></li>
-            <li><a href="#">Experiments</a></li>
-            <li><a href="#">Random</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="#">Food</a></li>
           </ul>
 
           <h5>Tags</h5>
-          <div>
-            <span class="tag">#Love</span>
-            <span class="tag">#Books</span>
-            <span class="tag">#Movies</span>
-            <span class="tag">#Life</span>
-            <span class="tag">#Joy</span>
-            <span class="tag">#Nature</span>
-          </div>
+          <ul class="d-flex flex-wrap">
+            <li class="mr-2"><a href="#">#Book</a></li>
+            <li class="mr-2"><a href="#">#Tamil</a></li>
+            <li class="mr-2"><a href="#">#Mindset</a></li>
+            <li class="mr-2"><a href="#">#Inspiration</a></li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-  <footer class="footer text-center">
-    <div class="container">
-      <p>© 2025 Sammy’s MindChirps Clone | Created for learning purpose</p>
-    </div>
-  </footer>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Copyright &copy; 2025 Sammy's MindChirps. All rights reserved.</p>
+  </div>
 </body>
 </html>
