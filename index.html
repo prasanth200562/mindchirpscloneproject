@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sammy's MindChirps Clone</title>
+  <meta name="description" content="MindChirps Blog Clone">
+  <meta name="theme-color" content="#1e525b">
+  <link rel="icon" href="https://www.mindchirps.com/image/1598192630.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background: url('https://www.mindchirps.com/background/background15.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+    }
+    .navbar {
+      background-color: #1e525b;
+    }
+    .navbar-brand, .nav-link, .footer a {
+      color: white !important;
+    }
+    .header-title {
+      font-family: 'Satisfy', cursive;
+      font-size: 3rem;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      background: rgba(255,255,255,0.95);
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .blog-post {
+      margin-bottom: 30px;
+    }
+    .blog-post img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .blog-post h3 {
+      margin-top: 10px;
+    }
+    .sidebar h5 {
+      margin-top: 20px;
+      border-bottom: 2px solid #1e525b;
+      padding-bottom: 5px;
+    }
+    .footer {
+      background: #1e525b;
+      color: white;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    .tag {
+      display: inline-block;
+      background: #1e525b;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: 3px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">MindChirps</a>
+  </nav>
+  <div class="container mt-4 mb-5">
+    <div class="header-title">Welcome to Sammy's MindChirps</div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="content">
+          <div class="blog-post">
+            <img src="https://www.mindchirps.com/image/1710846152.jpeg" alt="Blog Image">
+            <h3>5 Books That Made Me Reflect</h3>
+            <p>These books touched my mind and soul in different ways. Let me walk you through them and how they influenced my thoughts.</p>
+          </div>
+          <div class="blog-post">
+            <img src="https://www.mindchirps.com/image/1710046152.jpg" alt="Blog Image">
+            <h3>Unexpected Lessons from Daily Life</h3>
+            <p>Everyday moments are full of wonder. A child’s laughter or a bird’s call can teach deep lessons if we observe closely.</p>
+          </div>
+          <div class="blog-post">
+            <img src="https://www.mindchirps.com/image/1698842123.jpg" alt="Blog Image">
+            <h3>5 Tamil Movies You Must Watch</h3>
+            <p>These films are more than entertainment. They speak of society, love, and human struggles in raw and beautiful ways.</p>
+          </div>
+          <div class="text-center">
+            <a href="?page=1" class="btn btn-outline-dark">← Previous</a>
+            <a href="?page=3" class="btn btn-outline-dark">Next →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="content sidebar">
+          <h5>About</h5>
+          <p>Hi, I’m Sammy! This is my space to share thoughts, reviews, and moments from life’s lab. LIFE = Laboratory with Infinite Freedom to Experiment.</p>
+
+          <h5>Newsletter</h5>
+          <p>Subscribe to get updates on new blog posts directly to your inbox.</p>
+          <input type="email" class="form-control mb-2" placeholder="Your email">
+          <button class="btn btn-primary btn-block">Subscribe</button>
+
+          <h5>Categories</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Life</a></li>
+            <li><a href="#">Experiments</a></li>
+            <li><a href="#">Random</a></li>
+          </ul>
+
+          <h5>Tags</h5>
+          <div>
+            <span class="tag">#Love</span>
+            <span class="tag">#Books</span>
+            <span class="tag">#Movies</span>
+            <span class="tag">#Life</span>
+            <span class="tag">#Joy</span>
+            <span class="tag">#Nature</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer text-center">
+    <div class="container">
+      <p>© 2025 Sammy’s MindChirps Clone | Created for learning purpose</p>
+    </div>
+  </footer>
+</body>
+</html>
